@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>এক্সেল চাকুরী পরীক্ষার প্রশ্ন ৩১-৪০ | বিস্তারিত গাইড</title>
+  <!-- Google Font for Bengali -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #e7f0ec 0%, #cfe3d8 100%);
+      font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      border-radius: 3rem;
+      box-shadow: 0 35px 60px rgba(0, 20, 30, 0.3);
+      padding: 2.5rem 2rem 3rem;
+      margin: 1rem auto;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .excel-badge {
+      background: #1f6e43;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.6rem 2rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 10px 20px rgba(31, 110, 67, 0.4);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #0a3222;
+      line-height: 1.3;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.03);
+    }
+
+    .subhead {
+      font-size: 1.25rem;
+      color: #1a4d37;
+      margin-top: 0.8rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 0.6rem 2rem;
+      border-radius: 40px;
+      backdrop-filter: blur(5px);
+      border: 1px solid #cde5d8;
+    }
+
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #0e3d2a;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 2.2rem;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 20px 35px rgba(0, 20, 15, 0.12);
+      transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border: 1px solid rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #2e8b57, #6fbf8f, #2e8b57);
+      opacity: 0.8;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 35px 50px rgba(0, 40, 20, 0.25);
+      border-color: #a7d0b9;
+      background: #fcfefe;
+    }
+
+    .card-number {
+      background: #e1f0e6;
+      color: #0f5132;
+      font-weight: 700;
+      font-size: 1.6rem;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0,80,40,0.2);
+    }
+
+    .card h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0c3b28;
+      margin-bottom: 1.2rem;
+      line-height: 1.4;
+      border-left: 6px solid #2e8b57;
+      padding-left: 18px;
+    }
+
+    .question-text {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1b362a;
+      margin-bottom: 0.8rem;
+      background: #f4faf7;
+      padding: 1rem 1.2rem;
+      border-radius: 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+      border: 1px solid #d8eae0;
+    }
+
+    .answer-text {
+      font-size: 1rem;
+      color: #1e3a2c;
+      background: #fefefe;
+      padding: 1.2rem 1.2rem;
+      border-radius: 1.2rem;
+      line-height: 1.7;
+      border: 1px solid #d0e4d8;
+      margin: 0.7rem 0 0.3rem;
+      word-break: break-word;
+    }
+
+    .code-snippet {
+      background: #1c2b24;
+      color: #ddf2e5;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      margin: 1rem 0 0.5rem;
+      letter-spacing: 0.3px;
+      overflow-x: auto;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+      word-break: break-all;
+      white-space: pre-wrap;
+    }
+
+    .detail-toggle {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      text-align: right;
+      font-size: 0.95rem;
+      color: #2e6b4f;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #dcebe3;
+    }
+
+    .toggle-btn {
+      background: #e8f3ed;
+      border: none;
+      color: #155a37;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.25s;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .toggle-btn:hover {
+      background: #cfe8da;
+      color: #0a3d24;
+      box-shadow: 0 4px 10px rgba(0,60,30,0.15);
+    }
+
+    .extra-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+      margin-top: 0.8rem;
+      background: #f9fffc;
+      border-radius: 1.2rem;
+      border: 1px dashed #a8cfba;
+    }
+
+    .extra-detail.show {
+      max-height: 700px;
+    }
+
+    .extra-content {
+      padding: 1.2rem 1.3rem;
+      font-size: 1rem;
+      color: #1d4230;
+      line-height: 1.7;
+      display: flex;
+      gap: 10px;
+    }
+
+    .extra-content i {
+      color: #2a7855;
+      margin-top: 4px;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 3rem;
+      background: #1a4a33;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      letter-spacing: 0.3px;
+    }
+
+    .footer-note i {
+      margin-right: 10px;
+      color: #ffd966;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+      .container {
+        padding: 1.5rem 1rem;
+      }
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="excel-badge"><i class="fas fa-table"></i> MS EXCEL ADVANCED</div>
+      <h1>চাকুরী পরীক্ষায় কমন<br>এক্সেল প্রশ্ন ৩১-৪০</h1>
+      <div class="subhead">আরও বিস্তারিত উত্তর, ফর্মুলা, শর্টকাট ও টিপস সহ</div>
+      <div class="stats-bar">
+        <span class="stat-item"><i class="fas fa-check-circle" style="color:#2e8b57;"></i> ১০টি অ্যাডভান্সড টপিক</span>
+        <span class="stat-item"><i class="fas fa-file-alt" style="color:#c45a32;"></i> গভীর ব্যাখ্যা</span>
+        <span class="stat-item"><i class="fas fa-code" style="color:#1e6f9f;"></i> ফর্মুলা ও উদাহরণ</span>
+      </div>
+    </header>
+
+    <div class="grid" id="questionGrid">
+      <!-- ডাইনামিক কার্ড জাভাস্ক্রিপ্ট দিয়ে বসবে -->
+    </div>
+
+    <div class="footer-note">
+      <i class="fas fa-lightbulb"></i> টিপস: এক্সেলের অ্যাডভান্সড ফাংশন, ডেটা অ্যানালাইসিস টুল এবং অটোমেশন — এই টপিকগুলো থেকে প্রায়শই প্রশ্ন আসে। নিয়মিত চর্চা করুন।
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // ৩১-৪০ নং প্রশ্নের বিস্তারিত ডেটা
+      const excelQuestions = [
+        {
+          number: 31,
+          title: "ফ্ল্যাশ ফিল (Flash Fill)",
+          question: "Flash Fill কী এবং এটি কীভাবে ব্যবহার করা হয়?",
+          answer: "Flash Fill একটি বুদ্ধিমান টুল যা আপনার ডেটা প্যাটার্ন শিখে স্বয়ংক্রিয়ভাবে বাকি কলাম পূরণ করে। যেমন ইমেইল থেকে নাম আলাদা করা, ফোন নম্বর ফরম্যাট করা ইত্যাদি।",
+          extra: "Data → Flash Fill বা Ctrl+E চাপুন। প্রথম সেলে প্যাটার্ন লিখে এন্টার দিন, তারপর নিচের সেলে গিয়ে Ctrl+E চাপলে বাকিটা পূরণ হবে।",
+          code: "Data > Flash Fill (Ctrl+E)\nউদাহরণ: ইমেইল থেকে নাম আলাদা করা"
+        },
+        {
+          number: 32,
+          title: "স্পার্কলাইন (Sparkline)",
+          question: "স্পার্কলাইন কী এবং এটি কীভাবে কাজ করে?",
+          answer: "স্পার্কলাইন হলো একটি সেলের ভেতরে ছোট চার্ট যা ডেটার প্রবণতা দেখায়। এটি লাইন, কলাম বা Win/Loss আকারে হতে পারে।",
+          extra: "Insert → Sparklines → Line/Column/Win/Loss। বড় চার্টের তুলনায় স্পার্কলাইন দ্রুত ডেটার ট্রেন্ড দেখায়।",
+          code: "Insert > Sparklines > Line/Column/Win/Loss"
+        },
+        {
+          number: 33,
+          title: "টেবিল ফরম্যাটিং",
+          question: "Excel Table এবং সাধারণ রেঞ্জের মধ্যে পার্থক্য কী?",
+          answer: "Excel Table একটি বিশেষ কাঠামো যেখানে ডেটা স্বয়ংক্রিয়ভাবে ফিল্টার, সর্ট, স্ট্রাইপড রো, মোট সারি এবং ডাইনামিক রেঞ্জ সুবিধা পায়। সাধারণ রেঞ্জে এসব কাজ ম্যানুয়ালি করতে হয়।",
+          extra: "Insert → Table (Ctrl+T) চাপুন। টেবিল তৈরি হলে টেবিলের নাম ব্যবহার করে ফর্মুলা লেখা যায়, যেমন =SUM(Table1[Sales])",
+          code: "Insert > Table (Ctrl+T)\n=SUM(Table1[Sales])"
+        },
+        {
+          number: 34,
+          title: "কন্ডিশনাল ফরম্যাটিং অ্যাডভান্সড",
+          question: "Formula-based Conditional Formatting কীভাবে ব্যবহার করা হয়?",
+          answer: "Conditional Formatting এ ফর্মুলা ব্যবহার করে জটিল শর্ত তৈরি করা যায়। যেমন =AND(A1>50, A1<100) লিখলে শুধুমাত্র ৫০ থেকে ১০০ এর মধ্যে মানগুলো হাইলাইট হবে।",
+          extra: "Home → Conditional Formatting → New Rule → Use a formula to determine which cells to format। ফর্মুলা সত্য হলে ফরম্যাট প্রয়োগ হবে।",
+          code: "=AND(A1>50, A1<100)\n=MOD(ROW(),2)=0 (জোড় সারি হাইলাইট)"
+        },
+        {
+          number: 35,
+          title: "রেফারেন্স টাইপ",
+          question: "Relative, Absolute এবং Mixed রেফারেন্সের মধ্যে পার্থক্য কী?",
+          answer: "Relative রেফারেন্স (A1) কপি করলে পরিবর্তিত হয়। Absolute রেফারেন্স ($A$1) কপি করলে স্থির থাকে। Mixed রেফারেন্সে ($A1 বা A$1) একটি অংশ স্থির ও একটি অংশ পরিবর্তিত হয়।",
+          extra: "F4 চাপলে রেফারেন্স টাইপ সাইকেল করে — A1 → $A$1 → A$1 → $A1। মিশ্র রেফারেন্স টেবিলের নির্দিষ্ট সারি/কলামের জন্য উপযোগী।",
+          code: "Relative: A1\nAbsolute: $A$1\nMixed: $A1 (কলাম স্থির) | A$1 (সারি স্থির)"
+        },
+        {
+          number: 36,
+          title: "ফাইল ফরম্যাট",
+          question: "এক্সেলের বিভিন্ন ফাইল ফরম্যাটের পার্থক্য কী?",
+          answer: ".xlsx সাধারণ ওয়ার্কবুক, .xlsm ম্যাক্রো-সক্ষম ওয়ার্কবুক, .xls পুরাতন ফরম্যাট, .csv কমা দিয়ে আলাদা ডেটা, .pdf পোর্টেবল ডকুমেন্ট, .xltx টেমপ্লেট।",
+          extra: ".xlsm ফরম্যাটে ম্যাক্রো কোড সংরক্ষিত থাকে। .csv ফরম্যাটে শুধুমাত্র একক শিট থাকে এবং ফরম্যাটিং নষ্ট হয়।",
+          code: ".xlsx (স্ট্যান্ডার্ড) | .xlsm (ম্যাক্রো) | .csv (ডেটা এক্সচেঞ্জ)"
+        },
+        {
+          number: 37,
+          title: "প্রটেক্টেড ভিউ",
+          question: "Protected View কী এবং এটি কেন ব্যবহার করা হয়?",
+          answer: "Protected View একটি নিরাপত্তা ফিচার যা ইন্টারনেট বা ইমেইল থেকে আসা ফাইল খোলার সময় শুধুমাত্র পড়ার অনুমতি দেয়, যাতে ম্যালওয়্যার সংক্রমণ রোধ করা যায়।",
+          extra: "File → Info → Enable Editing চেপে সম্পাদনা শুরু করা যায়। Trust Center সেটিংস থেকে Protected View নিয়ন্ত্রণ করা যায়।",
+          code: "File > Info > Enable Editing"
+        },
+        {
+          number: 38,
+          title: "কাস্টম ফরম্যাট",
+          question: "কাস্টম নম্বর ফরম্যাট কীভাবে তৈরি করা হয়?",
+          answer: "Format Cells → Number → Custom এ গিয়ে নিজস্ব ফরম্যাট কোড তৈরি করা যায়। যেমন 0.00 লিখলে দুই দশমিক, #,##0 লিখলে হাজার সেপারেটর, dd-mmm-yyyy তারিখ ফরম্যাট।",
+          extra: "কোডের গঠন: Positive; Negative; Zero; Text। যেমন 0.00;-0.00;\"-\";@ — ধনাত্মক দেখাবে সাধারণ, ঋণাত্মক লাল, শূন্য ড্যাশ।",
+          code: "Format Cells > Number > Custom > Type: 0.00"
+        },
+        {
+          number: 39,
+          title: "ফাংশন নেস্টিং",
+          question: "নেস্টেড ফাংশন কী এবং এর সীমা কত?",
+          answer: "নেস্টেড ফাংশন হলো এক ফাংশনের ভেতরে আরেক ফাংশন ব্যবহার করা। যেমন =IF(SUM(A1:A10)>100, \"বেশি\", \"কম\")। এক্সেলে সর্বোচ্চ ৬৪ স্তরের নেস্টিং করা যায়।",
+          extra: "আধুনিক এক্সেলে IFS, SWITCH ফাংশন নেস্টিং কমাতে সাহায্য করে। জটিল ফর্মুলায় নেস্টিং ভাঙতে Helper কলাম ব্যবহার করা ভালো।",
+          code: "=IF(SUM(A1:A10)>100, \"বেশি\", \"কম\")\n=IFERROR(VLOOKUP(...), INDEX(...))"
+        },
+        {
+          number: 40,
+          title: "ডেটা অ্যানালাইসিস টুলপ্যাক",
+          question: "Data Analysis ToolPak কী এবং এটি কীভাবে সক্রিয় করা হয়?",
+          answer: "Data Analysis ToolPak একটি অ্যাড-ইন যা পরিসংখ্যান ও ইঞ্জিনিয়ারিং বিশ্লেষণ টুল যোগ করে — যেমন Regression, ANOVA, Histogram, Moving Average ইত্যাদি।",
+          extra: "File → Options → Add-ins → Excel Add-ins → Analysis ToolPak চেক করুন। তারপর Data ট্যাবে Data Analysis বাটন দেখা যাবে।",
+          code: "File > Options > Add-ins > Excel Add-ins > Analysis ToolPak"
+        }
+      ];
+
+      const grid = document.getElementById('questionGrid');
+
+      excelQuestions.forEach((item) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+          <div class="card-number">${item.number}</div>
+          <h3>${item.title}</h3>
+          <div class="question-text"><i class="fas fa-question-circle" style="color:#2e8b57; margin-top:4px;"></i> ${item.question}</div>
+          <div class="answer-text"><i class="fas fa-reply" style="color:#c45a32; margin-right:8px;"></i> ${item.answer}</div>
+          ${item.code ? `<div class="code-snippet"><i class="fas fa-terminal" style="margin-right:8px;"></i>${item.code}</div>` : ''}
+          <div class="detail-toggle">
+            <button class="toggle-btn"><i class="fas fa-chevron-circle-down"></i> বিস্তারিত দেখুন</button>
+          </div>
+          <div class="extra-detail">
+            <div class="extra-content">
+              <i class="fas fa-info-circle"></i>
+              <span>${item.extra}</span>
+            </div>
+          </div>
+        `;
+
+        const toggleBtn = card.querySelector('.toggle-btn');
+        const extraDiv = card.querySelector('.extra-detail');
+
+        function toggleExtra() {
+          const isOpen = extraDiv.classList.contains('show');
+          if (isOpen) {
+            extraDiv.classList.remove('show');
+            toggleBtn.innerHTML = '<i class="fas fa-chevron-circle-down"></i> বিস্তারিত দেখুন';
+          } else {
+            extraDiv.classList.add('show');
+            toggleBtn.innerHTML = '<i class="fas fa-chevron-circle-up"></i> সংক্ষিপ্ত করুন';
+          }
+        }
+
+        toggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleExtra();
+        });
+
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('.toggle-btn')) return;
+          toggleExtra();
+        });
+
+        grid.appendChild(card);
+      });
+    })();
+  </script>
+</body>
+</html>

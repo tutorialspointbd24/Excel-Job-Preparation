@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>এক্সেল চাকুরী পরীক্ষার প্রশ্ন ১১-২০ | বিস্তারিত গাইড</title>
+  <!-- Google Font for Bengali -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #e7f0ec 0%, #cfe3d8 100%);
+      font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      border-radius: 3rem;
+      box-shadow: 0 35px 60px rgba(0, 20, 30, 0.3);
+      padding: 2.5rem 2rem 3rem;
+      margin: 1rem auto;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .excel-badge {
+      background: #1f6e43;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.6rem 2rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 10px 20px rgba(31, 110, 67, 0.4);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #0a3222;
+      line-height: 1.3;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.03);
+    }
+
+    .subhead {
+      font-size: 1.25rem;
+      color: #1a4d37;
+      margin-top: 0.8rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 0.6rem 2rem;
+      border-radius: 40px;
+      backdrop-filter: blur(5px);
+      border: 1px solid #cde5d8;
+    }
+
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 2.5rem 0 1rem;
+    }
+
+    .stat-item {
+      background: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #0e3d2a;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 2.2rem;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 20px 35px rgba(0, 20, 15, 0.12);
+      transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border: 1px solid rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #2e8b57, #6fbf8f, #2e8b57);
+      opacity: 0.8;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 35px 50px rgba(0, 40, 20, 0.25);
+      border-color: #a7d0b9;
+      background: #fcfefe;
+    }
+
+    .card-number {
+      background: #e1f0e6;
+      color: #0f5132;
+      font-weight: 700;
+      font-size: 1.6rem;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0,80,40,0.2);
+    }
+
+    .card h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0c3b28;
+      margin-bottom: 1.2rem;
+      line-height: 1.4;
+      border-left: 6px solid #2e8b57;
+      padding-left: 18px;
+    }
+
+    .question-text {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #1b362a;
+      margin-bottom: 0.8rem;
+      background: #f4faf7;
+      padding: 1rem 1.2rem;
+      border-radius: 1.2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+      border: 1px solid #d8eae0;
+    }
+
+    .answer-text {
+      font-size: 1rem;
+      color: #1e3a2c;
+      background: #fefefe;
+      padding: 1.2rem 1.2rem;
+      border-radius: 1.2rem;
+      line-height: 1.7;
+      border: 1px solid #d0e4d8;
+      margin: 0.7rem 0 0.3rem;
+      word-break: break-word;
+    }
+
+    .code-snippet {
+      background: #1c2b24;
+      color: #ddf2e5;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      margin: 1rem 0 0.5rem;
+      letter-spacing: 0.3px;
+      overflow-x: auto;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+      word-break: break-all;
+      white-space: pre-wrap;
+    }
+
+    .detail-toggle {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      text-align: right;
+      font-size: 0.95rem;
+      color: #2e6b4f;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #dcebe3;
+    }
+
+    .toggle-btn {
+      background: #e8f3ed;
+      border: none;
+      color: #155a37;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.25s;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .toggle-btn:hover {
+      background: #cfe8da;
+      color: #0a3d24;
+      box-shadow: 0 4px 10px rgba(0,60,30,0.15);
+    }
+
+    .extra-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+      margin-top: 0.8rem;
+      background: #f9fffc;
+      border-radius: 1.2rem;
+      border: 1px dashed #a8cfba;
+    }
+
+    .extra-detail.show {
+      max-height: 700px;
+    }
+
+    .extra-content {
+      padding: 1.2rem 1.3rem;
+      font-size: 1rem;
+      color: #1d4230;
+      line-height: 1.7;
+      display: flex;
+      gap: 10px;
+    }
+
+    .extra-content i {
+      color: #2a7855;
+      margin-top: 4px;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 3rem;
+      background: #1a4a33;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      letter-spacing: 0.3px;
+    }
+
+    .footer-note i {
+      margin-right: 10px;
+      color: #ffd966;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+      .container {
+        padding: 1.5rem 1rem;
+      }
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="excel-badge"><i class="fas fa-table"></i> MS EXCEL SPECIAL</div>
+      <h1>চাকুরী পরীক্ষায় কমন<br>এক্সেল প্রশ্ন ১১-২০</h1>
+      <div class="subhead">বিস্তারিত উত্তর, ফর্মুলা, শর্টকাট ও ব্যাখ্যা সহ</div>
+      <div class="stats-bar">
+        <span class="stat-item"><i class="fas fa-check-circle" style="color:#2e8b57;"></i> ১০টি গুরুত্বপূর্ণ টপিক</span>
+        <span class="stat-item"><i class="fas fa-file-alt" style="color:#c45a32;"></i> বিস্তারিত উত্তর</span>
+        <span class="stat-item"><i class="fas fa-code" style="color:#1e6f9f;"></i> সিনট্যাক্স ও উদাহরণ</span>
+      </div>
+    </header>
+
+    <div class="grid" id="questionGrid">
+      <!-- ডাইনামিক কার্ড জাভাস্ক্রিপ্ট দিয়ে বসবে -->
+    </div>
+
+    <div class="footer-note">
+      <i class="fas fa-lightbulb"></i> টিপস: Pivot Table, Filter, Data Validation, Protect Sheet — এই টপিকগুলো থেকে প্রায়শই ব্যবহারিক প্রশ্ন আসে। হাতে-কলমে চর্চা করুন।
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // ১১-২০ নং প্রশ্নের বিস্তারিত ডেটা
+      const excelQuestions = [
+        {
+          number: 11,
+          title: "ডেটা সর্ট ও ফিল্টার",
+          question: "Sort এবং Filter এর মধ্যে পার্থক্য কী?",
+          answer: "Sort ডেটাকে ঊর্ধ্বক্রম (A-Z, ছোট থেকে বড়) বা অধঃক্রম (Z-A, বড় থেকে ছোট) অনুযায়ী সাজায়। Filter নির্দিষ্ট শর্ত অনুযায়ী ডেটা দেখায়, বাকি ডেটা লুকিয়ে রাখে (ডিলিট করে না)।",
+          extra: "Ctrl+Shift+L দ্রুত ফিল্টার চালু/বন্ধ করে। Custom Sort দিয়ে একাধিক কলাম অনুযায়ী সাজানো যায়। Filter এ Text Filter, Number Filter, Date Filter অপশন পাওয়া যায়।",
+          code: "Data > Sort A to Z / Sort Z to A\nData > Filter (Ctrl+Shift+L)"
+        },
+        {
+          number: 12,
+          title: "Pivot Table",
+          question: "Pivot Table কী?",
+          answer: "Pivot Table একটি শক্তিশালী ডেটা সামারি টুল যা হাজার হাজার সারির ডেটাকে দ্রুত সংক্ষেপে টেবিল আকারে দেখায়। এটি ডেটা গ্রুপ, যোগ, গড়, গণনা, ক্রস-ট্যাবুলেশন করতে পারে।",
+          extra: "Insert → PivotTable। তারপর Rows, Columns, Values, Filters এলাকায় ফিল্ড টেনে আনুন। ডেটা আপডেট হলে Pivot Table রিফ্রেশ করতে হবে (Alt+F5)।",
+          code: "Insert > PivotTable > Select Range > New Worksheet"
+        },
+        {
+          number: 13,
+          title: "CONCATENATE / TEXTJOIN",
+          question: "দুইটি সেলের টেক্সট জোড়া দিতে কোন ফাংশন ব্যবহার হয়?",
+          answer: "দুই বা একাধিক সেলের টেক্সট একত্রিত করতে CONCATENATE ফাংশন, TEXTJOIN ফাংশন অথবা & (অ্যাম্পারস্যান্ড) অপারেটর ব্যবহার করা যায়। যেমন: =A1&\" \"&B1 ।",
+          extra: "TEXTJOIN ডিলিমিটার (যেমন কমা, স্পেস) সহ একাধিক সেল যোগ করতে পারে এবং ফাঁকা সেল উপেক্ষা করতে পারে। CONCATENATE শুধু নির্দিষ্ট সেল যোগ করে।",
+          code: "=CONCATENATE(A1,\" \",B1)\n=TEXTJOIN(\" \",TRUE,A1,B1)\n=A1&\" - \"&B1"
+        },
+        {
+          number: 14,
+          title: "ডুপ্লিকেট রিমুভ",
+          question: "ডুপ্লিকেট মান কীভাবে বের করা যায়?",
+          answer: "ডুপ্লিকেট বের করার জন্য Data ট্যাব → Remove Duplicates ব্যবহার করা যায়। এছাড়া Conditional Formatting → Highlight Cell Rules → Duplicate Values দিয়ে চিহ্নিত করা যায়। COUNTIF ফর্মুলা দিয়েও ডুপ্লিকেট নির্ণয় করা সম্ভব।",
+          extra: "COUNTIF পদ্ধতি: =COUNTIF($A$1:A1,A1)>1 (দ্বিতীয়বার আসলে TRUE)। Remove Duplicates কলাম নির্বাচন করে একাধিক কলামেও কাজ করে।",
+          code: "Data > Remove Duplicates\n=COUNTIF($A$1:A1, A1)>1"
+        },
+        {
+          number: 15,
+          title: "ডেটা ভ্যালিডেশন",
+          question: "Data Validation-এর ব্যবহার কী?",
+          answer: "Data Validation নির্দিষ্ট সেলে কী ধরনের ডেটা প্রবেশ করা যাবে তার নিয়ম তৈরি করে। যেমন শুধুমাত্র ১-১০০ এর মধ্যে সংখ্যা, নির্দিষ্ট তালিকা থেকে বাছাই (ড্রপডাউন), তারিখের সীমা ইত্যাদি।",
+          extra: "Data → Data Validation → Allow: Whole number, Decimal, List, Date, Time, Text length, Custom। ইনপুট মেসেজ ও এরর অ্যালার্টও দেওয়া যায়।",
+          code: "Data > Data Validation > Allow: List > Source: Dhaka,Chittagong,Khulna"
+        },
+        {
+          number: 16,
+          title: "TRIM এবং PROPER",
+          question: "TRIM ও PROPER ফাংশনের কাজ কী?",
+          answer: "TRIM টেক্সটের শুরু ও শেষের অতিরিক্ত স্পেস এবং মধ্যের একাধিক স্পেস কমিয়ে একটি স্পেস রাখে। PROPER প্রতিটি শব্দের প্রথম অক্ষর বড় করে এবং বাকি অক্ষর ছোট করে।",
+          extra: "CLEAN ফাংশন নন-প্রিন্টিং ক্যারেক্টার সরায়। LOWER সব ছোট করে, UPPER সব বড় করে। =TRIM(PROPER(A1)) একসাথে ব্যবহার করা যায়।",
+          code: "=TRIM(A1)\n=PROPER(A1)\n=UPPER(A1) | =LOWER(A1)"
+        },
+        {
+          number: 17,
+          title: "ফাইল প্রোটেকশন",
+          question: "এক্সেল ফাইল বা শিট প্রোটেক্ট করার নিয়ম কী?",
+          answer: "ফাইল বা শিট প্রোটেক্ট করতে Review ট্যাব → Protect Sheet (পাসওয়ার্ড সহ) বা Protect Workbook ব্যবহার করা হয়। এছাড়া File → Info → Protect Workbook এ এনক্রিপশন ও পাসওয়ার্ড সেট করা যায়।",
+          extra: "Protect Sheet এ নির্দিষ্ট সেল লক করা যায় (Format Cells → Protection → Locked)। পাসওয়ার্ড ভুলে গেলে খোলা কঠিন, তাই সতর্ক থাকুন।",
+          code: "Review > Protect Sheet > Password: ****"
+        },
+        {
+          number: 18,
+          title: "শর্টকাট কী (সবচেয়ে কমন)",
+          question: "Ctrl + Shift + L দিয়ে কী হয়?",
+          answer: "Ctrl+Shift+L ফিল্টার চালু/বন্ধ করে। এছাড়া গুরুত্বপূর্ণ: Ctrl+; (বর্তমান তারিখ), Ctrl+Shift+: (বর্তমান সময়), Ctrl+1 (ফরম্যাট সেল ডায়ালগ), F2 (সেল এডিট), F4 (অ্যাবসলুট রেফারেন্স টগল), Alt+Enter (সেলের ভেতরে নতুন লাইন)।",
+          extra: "Ctrl+Arrow কী ডেটার শেষে নিয়ে যায়, Ctrl+Shift+Arrow রেঞ্জ সিলেক্ট করে, Ctrl+Home শুরুর সেলে, Ctrl+End শেষ ডেটা সেলে।",
+          code: "Ctrl+Shift+L | Ctrl+; | Ctrl+Shift+: | F2 | F4 | Alt+Enter"
+        },
+        {
+          number: 19,
+          title: "MAX, MIN, AVERAGE",
+          question: "কোনো রেঞ্জের সর্বোচ্চ, সর্বনিম্ন ও গড় নির্ণয়ের ফাংশন কী কী?",
+          answer: "MAX রেঞ্জের সর্বোচ্চ সংখ্যা, MIN সর্বনিম্ন সংখ্যা এবং AVERAGE গড় মান প্রদান করে। যেমন =MAX(A1:A10), =MIN(A1:A10), =AVERAGE(A1:A10)।",
+          extra: "LARGE এবং SMALL নির্দিষ্ট অবস্থানের মান দেয় (যেমন দ্বিতীয় সর্বোচ্চ =LARGE(A1:A10,2))। MEDIAN মধ্যমা দেয়।",
+          code: "=MAX(A1:A10) | =MIN(A1:A10) | =AVERAGE(A1:A10)"
+        },
+        {
+          number: 20,
+          title: "সেল রেঞ্জ",
+          question: "A1:C5 বলতে কী বোঝায়?",
+          answer: "A1:C5 একটি সেল রেঞ্জ নির্দেশ করে যা A কলাম থেকে C কলাম এবং ১ নম্বর সারি থেকে ৫ নম্বর সারি পর্যন্ত বিস্তৃত। এতে মোট ১৫টি সেল আছে (৩টি কলাম × ৫টি সারি)।",
+          extra: "রেঞ্জ নির্বাচন করতে Shift+ক্লিক অথবা ড্র্যাগ করুন। নামযুক্ত রেঞ্জ তৈরি করা যায় (Name Box এ নাম লিখে)।",
+          code: "A1:C5 = 3 columns (A,B,C) × 5 rows (1-5) = 15 cells"
+        }
+      ];
+
+      const grid = document.getElementById('questionGrid');
+
+      excelQuestions.forEach((item) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+          <div class="card-number">${item.number}</div>
+          <h3>${item.title}</h3>
+          <div class="question-text"><i class="fas fa-question-circle" style="color:#2e8b57; margin-top:4px;"></i> ${item.question}</div>
+          <div class="answer-text"><i class="fas fa-reply" style="color:#c45a32; margin-right:8px;"></i> ${item.answer}</div>
+          ${item.code ? `<div class="code-snippet"><i class="fas fa-terminal" style="margin-right:8px;"></i>${item.code}</div>` : ''}
+          <div class="detail-toggle">
+            <button class="toggle-btn"><i class="fas fa-chevron-circle-down"></i> বিস্তারিত দেখুন</button>
+          </div>
+          <div class="extra-detail">
+            <div class="extra-content">
+              <i class="fas fa-info-circle"></i>
+              <span>${item.extra}</span>
+            </div>
+          </div>
+        `;
+
+        const toggleBtn = card.querySelector('.toggle-btn');
+        const extraDiv = card.querySelector('.extra-detail');
+
+        function toggleExtra() {
+          const isOpen = extraDiv.classList.contains('show');
+          if (isOpen) {
+            extraDiv.classList.remove('show');
+            toggleBtn.innerHTML = '<i class="fas fa-chevron-circle-down"></i> বিস্তারিত দেখুন';
+          } else {
+            extraDiv.classList.add('show');
+            toggleBtn.innerHTML = '<i class="fas fa-chevron-circle-up"></i> সংক্ষিপ্ত করুন';
+          }
+        }
+
+        toggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleExtra();
+        });
+
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('.toggle-btn')) return;
+          toggleExtra();
+        });
+
+        grid.appendChild(card);
+      });
+    })();
+  </script>
+</body>
+</html>
