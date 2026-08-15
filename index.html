@@ -350,16 +350,16 @@
   <script>
     (function() {
       const sections = [
-        { range: "১-১০", title: "ফাউন্ডেশন", subtitle: "বেসিক এক্সেল টপিক", icon: "fa-solid fa-table-cells" },
-        { range: "১১-২০", title: "ডেটা ম্যানেজমেন্ট", subtitle: "সর্ট, ফিল্টার, পিভট টেবিল", icon: "fa-solid fa-database" },
-        { range: "২১-৩০", title: "অ্যাডভান্সড ফাংশন", subtitle: "INDEX+MATCH, TEXT, DATE", icon: "fa-solid fa-function" },
-        { range: "৩১-৪০", title: "অটোমেশন ও ফরম্যাটিং", subtitle: "Flash Fill, Table, Sparkline", icon: "fa-solid fa-bolt" },
-        { range: "৪১-৫০", title: "পাওয়ার টুলস", subtitle: "Power Query, VBA, Dynamic Array", icon: "fa-solid fa-rocket" },
-        { range: "৫১-৬০", title: "মাস্টারি ফাংশন", subtitle: "INDIRECT, OFFSET, MATCH, INDEX", icon: "fa-solid fa-crown" },
-        { range: "৬১-৭০", title: "ইন্টারফেস ও শর্টকাট", subtitle: "Custom List, Data Bar, Dropdown", icon: "fa-solid fa-keyboard" },
-        { range: "৭১-৮০", title: "পিভট ও ডেটা মডেল", subtitle: "Calculated Field, Slicer, Power Pivot", icon: "fa-solid fa-chart-pie" },
-        { range: "৮১-৯০", title: "বিজনেস অ্যানালাইসিস", subtitle: "Forecast, Solver, Financial Functions", icon: "fa-solid fa-chart-line" },
-        { range: "৯১-১০০", title: "প্রফেশনাল প্র্যাকটিস", subtitle: "VBA Form, Security, Export", icon: "fa-solid fa-gem" }
+        { range: "১-১০", title: "ফাউন্ডেশন", subtitle: "বেসিক এক্সেল টপিক", icon: "fa-solid fa-table-cells", link: "1-10.html" },
+        { range: "১১-২০", title: "ডেটা ম্যানেজমেন্ট", subtitle: "সর্ট, ফিল্টার, পিভট টেবিল", icon: "fa-solid fa-database", link: "11-20.html" },
+        { range: "২১-৩০", title: "অ্যাডভান্সড ফাংশন", subtitle: "INDEX+MATCH, TEXT, DATE", icon: "fa-solid fa-function", link: "21-30.html" },
+        { range: "৩১-৪০", title: "অটোমেশন ও ফরম্যাটিং", subtitle: "Flash Fill, Table, Sparkline", icon: "fa-solid fa-bolt", link: "31-40.html" },
+        { range: "৪১-৫০", title: "পাওয়ার টুলস", subtitle: "Power Query, VBA, Dynamic Array", icon: "fa-solid fa-rocket", link: "41-50.html" },
+        { range: "৫১-৬০", title: "মাস্টারি ফাংশন", subtitle: "INDIRECT, OFFSET, MATCH, INDEX", icon: "fa-solid fa-crown", link: "51-60.html" },
+        { range: "৬১-৭০", title: "ইন্টারফেস ও শর্টকাট", subtitle: "Custom List, Data Bar, Dropdown", icon: "fa-solid fa-keyboard", link: "61-70.html" },
+        { range: "৭১-৮০", title: "পিভট ও ডেটা মডেল", subtitle: "Calculated Field, Slicer, Power Pivot", icon: "fa-solid fa-chart-pie", link: "71-80.html" },
+        { range: "৮১-৯০", title: "বিজনেস অ্যানালাইসিস", subtitle: "Forecast, Solver, Financial Functions", icon: "fa-solid fa-chart-line", link: "81-90.html" },
+        { range: "৯১-১০০", title: "প্রফেশনাল প্র্যাকটিস", subtitle: "VBA Form, Security, Export", icon: "fa-solid fa-gem", link: "91-100.html" }
       ];
 
       const grid = document.getElementById('linkGrid');
@@ -367,7 +367,7 @@
       sections.forEach((section, index) => {
         const linkCard = document.createElement('a');
         linkCard.className = 'link-card';
-        linkCard.href = '#';
+        linkCard.href = section.link;
         linkCard.setAttribute('data-range', section.range);
         linkCard.setAttribute('data-index', index);
 
@@ -385,10 +385,11 @@
           </div>
         `;
 
-        linkCard.addEventListener('click', (e) => {
-          e.preventDefault();
-          alert(`আপনি "${section.range}" প্রশ্ন বিভাগে ক্লিক করেছেন। এই লিংকে আপনার HTML পেজ যুক্ত করুন।`);
-        });
+        // অ্যালার্ট বাদ দেওয়া হয়েছে, সরাসরি লিংকে নিয়ে যাবে
+        // linkCard.addEventListener('click', (e) => {
+        //   e.preventDefault();
+        //   alert(`আপনি "${section.range}" প্রশ্ন বিভাগে ক্লিক করেছেন। এই লিংকে আপনার HTML পেজ যুক্ত করুন।`);
+        // });
 
         grid.appendChild(linkCard);
       });
